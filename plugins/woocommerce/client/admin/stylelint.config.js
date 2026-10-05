@@ -1,6 +1,7 @@
 module.exports = {
 	extends: '@wordpress/stylelint-config/scss-stylistic',
 	ignoreFiles: [ './vendor/**/*.scss' ],
+	plugins: [ '@wordpress/theme/stylelint-plugins/no-token-fallback-values' ],
 	rules: {
 		'at-rule-empty-line-before': null,
 		'at-rule-no-unknown': null,
@@ -28,8 +29,6 @@ module.exports = {
 		'selector-id-pattern': null,
 		'no-invalid-position-at-import-rule': null,
 		'length-zero-no-unit': [ true, { ignoreFunctions: [ 'calc', 'var' ] } ],
-		// Enabled by the preset since @wordpress/stylelint-config 23.x.
-		// TODO: re-enable once update-banner.scss uses valid WPDS tokens.
-		'plugin-wpds/no-unknown-ds-tokens': null,
+		'plugin-wpds/no-token-fallback-values': true,
 	},
 };

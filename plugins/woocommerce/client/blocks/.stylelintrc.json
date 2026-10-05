@@ -1,6 +1,8 @@
 {
 	"extends": "@wordpress/stylelint-config/scss",
+	"plugins": [ "@wordpress/theme/stylelint-plugins/no-token-fallback-values" ],
 	"rules": {
+		"plugin-wpds/no-token-fallback-values": true,
 		"at-rule-empty-line-before": null,
 		"at-rule-no-unknown": null,
 		"comment-empty-line-before": null,
