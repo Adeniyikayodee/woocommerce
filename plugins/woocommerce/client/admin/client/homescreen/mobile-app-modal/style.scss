@@ -94,6 +94,7 @@
 							h3 {
 								font-weight: 400;
 								color: #757575;
+								/* stylelint-disable-next-line declaration-property-unit-allowed-list */
 								line-height: 1.6rem;
 								margin: 0;
 							}
@@ -366,6 +367,7 @@ button.components-button.send-magic-link-button {
 		.email-sent-subheader {
 			font-weight: 400;
 			font-size: 16px;
+			/* stylelint-disable-next-line declaration-property-unit-allowed-list */
 			line-height: 1.5rem;
 			color: #757575;
 			text-align: center;
@@ -409,6 +411,7 @@ button.components-button.send-magic-link-button {
 		.wrong-user-connected-subheader {
 			font-weight: 400;
 			font-size: 16px;
+			/* stylelint-disable-next-line declaration-property-unit-allowed-list */
 			line-height: 1.5rem;
 			color: #757575;
 			text-align: center;
